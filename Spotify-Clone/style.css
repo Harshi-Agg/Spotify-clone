@@ -1,0 +1,224 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+/* NavBar CSS */
+.navbar{
+    background-color: black;
+}
+.navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.nav-item{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.searchBar {
+    color: #555;
+    display: flex;
+    background-color: #008080;
+}
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+input[type="search"]:focus{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    box-shadow: none;
+}
+
+.fa-microphone, .fa-magnifying-glass{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 9px 8px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+.fa-bell{
+    font-size: 1.3em;
+}
+.fa-circle-user{
+    font-size: 2.5em;
+}
+
+/************** Content Container CSS ****************/
+.content{
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:10px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding: 1%;
+}
+/* Left Content */
+.leftContent{
+    height: 100vh;
+    overflow: scroll;
+    min-width: 0;
+    padding-bottom: 10%;
+    border-right: 1px solid white;
+}
+.leftContent::-webkit-scrollbar {
+    display: none;
+}
+.leftContentSection1{
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+.imgSection{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.imgSection:hover{
+    transform: scale(1.02);
+}
+
+.latestReleaseSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+.latestSong{
+    padding: 2%;
+    margin: 0;
+    padding-bottom: 0;
+    cursor: pointer;
+    position: relative;
+}
+.latestSong > img{
+    margin-right: 5%;
+    width: 5em;
+    height: 5em;
+}
+.latestSong > img:hover{
+    opacity: 50%;
+    filter: grayscale(80%);
+}
+.latestSong > i{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    opacity: 0;
+}
+.latestSong:hover .fa-play{
+    opacity: 100%;
+}
+.latestSongName{
+    width: 75%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.latestSongtime{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.artistsContent{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.artistsContent::-webkit-scrollbar {
+    display: none;
+}
+.artists > img{
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.artists > p{
+    text-align: center;
+    font-size: small;
+    margin-top: 3%;
+}
+.artists:hover{
+    opacity: 60%;
+}
+.musicSection{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.musicSection::-webkit-scrollbar {
+    display: none;
+}
+.musics{
+    position: relative;
+    cursor: pointer;
+}
+.musics > img{
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    opacity: 60%;
+}
+.musics > span{
+    position: absolute;
+    top: 40%;
+    left: 28%;
+}
+.englishSongs > img{
+    height: 8em;
+    width: 8em;
+    cursor: pointer;
+}
+.englishSongs > p{
+    font-size: small;
+    margin-top: 3%;
+}
+.englishSongs:hover{
+    opacity: 60%;
+} 
+
+
+/* Right Content */
+.rightContent{
+    height: 100vh;
+    overflow: scroll;
+    padding-bottom: 20%;
+}
+.rightContent::-webkit-scrollbar {
+    display: none;
+}
+.dropdown-toggle{
+    text-decoration: none;
+    color: #008080;
+    font-weight: 700;
+}
+.listItems{
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-gap:10px;
+}
+.listItems > img{
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    padding: 0;
+}
+.listItems >p{
+    font-family:'Times New Roman', Times, serif;
+}
